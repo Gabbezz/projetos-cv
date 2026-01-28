@@ -1,16 +1,17 @@
+#Versão 2
 import pyautogui
 import time
 import sys
 
-# --- CONFIGURAÇÕES OBRIGATÓRIAS ---
+# Configurações iniciais
 
-# 1. Substitua pelas coordenadas que você encontrou
+# 1. Substituir os números no parênteses com os respectivos X e Y com o código "position"
 POS_TRES_PONTOS   = (703, 375)  # Onde estão os 3 pontos do PRIMEIRO perfil
 POS_MENU_EXCLUIR  = (666, 440)  # Onde está o item "Excluir" do menu
 POS_BOTAO_FINAL   = (1177, 715)  # Onde está o botão "Excluir" de confirmação
 
-# 2. Defina quantos perfis você quer excluir
-QUANTIDADE_DE_PERFIS = 119  # Mude este número
+# 2. Definir a quantidade de perfis para exlcuir
+QUANTIDADE_DE_PERFIS = 119  # Alterar esse número
 
 # 3. Pausas (em segundos) - Aumente se o script for rápido demais
 PAUSA_MENU = 0.5   # Tempo para o menu de 3 pontos aparecer
@@ -25,7 +26,7 @@ try:
     print(f"O script está configurado para excluir {QUANTIDADE_DE_PERFIS} perfis.")
     print("Mova o mouse para o canto da tela para PARAR A QUALQUER MOMENTO.")
    
-    # Pausa de segurança para você clicar na janela do Chrome
+    # Pausa de segurança para acessar a janela do chrome
     time.sleep(5)
     print("INICIANDO...")
 
